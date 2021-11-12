@@ -104,9 +104,6 @@ pub use config::{
     configure, Config, DriveStrength, Hysteresis, OpenDrain, PullKeeper, SlewRate, Speed,
 };
 
-#[allow(deprecated)]
-pub use config::{PullKeep, PullKeepSelect, PullUpDown};
-
 /// Re-export of top-level components, without the chip-specific modules.
 ///
 /// `prelude` is to help HAL implementors re-export the `imxrt-iomuxc` APIs
@@ -126,9 +123,6 @@ pub mod prelude {
     pub use crate::config::{
         configure, Config, DriveStrength, Hysteresis, OpenDrain, PullKeeper, SlewRate, Speed,
     };
-
-    #[allow(deprecated)]
-    pub use crate::config::{PullKeep, PullKeepSelect, PullUpDown};
 
     pub use crate::{
         consts, flexpwm, gpio, lpi2c, lpspi, lpuart, Daisy, ErasedPad, Pad, WrongPadError,

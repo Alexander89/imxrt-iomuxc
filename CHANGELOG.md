@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- **BREAKING** Remove the deprecated pull / keeper configuration API.
 - **BREAKING** rename feature flags and module: `"imxrt106x" => "imxrt1060"`
 
   For rational on this change, see
